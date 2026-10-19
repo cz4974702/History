@@ -1,131 +1,168 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>形象的代價｜英格蘭內戰互動敘事</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>王冠之下：英格蘭內戰角色抉擇</title>
 <style>
-:root{--ink:#202a35;--paper:#f3eee4;--card:#fffdf8;--red:#87363a;--gold:#b08a4a;--muted:#65707a;--green:#38634f}
-*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.7}
-header{background:var(--ink);color:#fff8e9;padding:32px 20px 28px;border-bottom:5px solid var(--gold)}.wrap{max-width:850px;margin:auto;padding:0 18px}
-.kicker{color:#d7bd8c;letter-spacing:.15em;font-size:.78rem}h1{font-size:clamp(2rem,6vw,3.2rem);line-height:1.2;margin:8px 0}.sub{color:#dfe3e7;max-width:680px}
-main{padding:24px 0 48px}.panel{background:var(--card);border:1px solid #ddd4c5;border-radius:15px;padding:clamp(18px,4vw,28px);margin:15px 0;box-shadow:0 7px 20px #302a1b0a}
-.tag{display:inline-block;border:1px solid #d8c7a6;border-radius:30px;padding:2px 10px;color:var(--red);font-size:.8rem;font-weight:750}
-h2{font-size:1.4rem;line-height:1.4;margin:12px 0}h3{margin-bottom:5px}.muted{color:var(--muted);font-size:.9rem}
-.roles{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:18px 0}
-.role{background:#fff;border:1px solid #ddd4c5;border-radius:12px;padding:15px;text-align:left;font:inherit;color:var(--ink);cursor:pointer}.role:hover{border-color:var(--gold);transform:translateY(-1px)}.role b{display:block;font-size:1.1rem;color:var(--red);margin-bottom:4px}.role span{font-size:.9rem;color:var(--muted)}
-button:focus-visible{outline:3px solid #c9a55e;outline-offset:3px}
-.primary,.secondary{border:0;border-radius:9px;padding:11px 16px;font:inherit;font-weight:700;cursor:pointer}.primary{background:var(--red);color:white}.secondary{background:#e8e0d2;color:var(--ink)}
-.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.hidden{display:none}
-.scene-meta{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:.87rem;color:var(--muted)}.progress{height:6px;background:#e5ddd0;border-radius:9px;overflow:hidden;margin:12px 0 20px}.bar{height:100%;background:var(--red);width:0;transition:width .25s}
-.narrative{font-size:1.02rem}.choice-list{display:grid;gap:11px;margin:20px 0}.choice{border:1px solid #ddd4c5;border-radius:11px;background:#fff;padding:14px 15px;text-align:left;font:inherit;color:var(--ink);cursor:pointer}.choice:hover{border-color:var(--gold);background:#fcf8ef}.choice b{display:block;margin-bottom:3px}.choice span{font-size:.9rem;color:var(--muted)}
-.consequence{background:#f1eadc;border-left:4px solid var(--gold);padding:14px 16px;border-radius:4px 10px 10px 4px;margin-top:15px}.consequence strong{display:block;color:var(--red);margin-bottom:4px}
-.traits{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px;margin:16px 0}.trait{background:#f3eee4;border-radius:10px;padding:12px}.trait b{display:block;font-size:1.3rem;color:var(--red)}.meter{height:5px;background:#ded5c6;border-radius:8px;margin-top:8px;overflow:hidden}.meter div{height:100%;background:var(--red)}
-blockquote{margin:14px 0;padding:13px 16px;border-left:3px solid var(--gold);background:#f8f3e9}
-footer{border-top:1px solid #d8d0c2;padding-top:16px;color:var(--muted);font-size:.83rem}
-</style></head>
+:root{--ink:#20232a;--paper:#f5f0e6;--card:#fffdf8;--red:#7d2933;--gold:#b08b4a;--muted:#6b6a64;--line:#ddd2bf;--green:#456b58}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,"Noto Serif TC","PMingLiU",serif;line-height:1.7}
+header{background:#25272b;color:#f8f1e5;padding:34px 20px 28px;border-bottom:5px solid var(--gold)}
+.wrap{max-width:980px;margin:auto;padding:0 18px}header .eyebrow{letter-spacing:.18em;text-transform:uppercase;color:#d7bd86;font:12px Arial,sans-serif}
+h1{font-size:clamp(30px,5vw,48px);line-height:1.18;margin:10px 0}header p{max-width:760px;color:#e5dfd4;margin:10px 0 0}
+main{padding:24px 0 54px}.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin:0 0 18px;box-shadow:0 4px 18px #372a1608}
+h2{font-size:23px;margin:0 0 10px;color:var(--red)}h3{font-size:18px;margin:0 0 6px}
+.small{font-size:13px;color:var(--muted)}.tag{display:inline-block;border:1px solid #d7c49f;border-radius:999px;padding:2px 10px;font:12px Arial,sans-serif;color:#74582c;margin:2px 4px 2px 0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.character{border:1px solid var(--line);border-radius:10px;padding:14px;background:#fff}
+.character p{font-size:14px;margin:7px 0}.character strong{color:var(--red)}
+button{font:inherit;cursor:pointer;border:1px solid #b8a889;border-radius:9px;padding:11px 14px;background:#fffaf0;color:var(--ink);transition:.15s}
+button:hover{border-color:var(--red);transform:translateY(-1px)}button.primary{background:var(--red);border-color:var(--red);color:white}button:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:14px}.choice{display:block;text-align:left;width:100%;margin:9px 0;padding:14px 16px;background:#fff;border:1px solid var(--line)}.choice b{display:block;color:var(--red);font-size:16px}.choice span{display:block;font-size:14px;color:#55534e;margin-top:4px}
+.meter{height:8px;background:#e6dfd2;border-radius:99px;overflow:hidden}.meter span{display:block;height:100%;background:var(--gold);width:50%;transition:width .3s}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.stat{background:#f6f0e4;padding:10px;border-radius:8px}.stat label{font-size:12px;color:var(--muted);display:block}.stat strong{font-size:19px}
+blockquote{margin:12px 0;padding:12px 16px;border-left:3px solid var(--gold);background:#f8f3e9}
+.hidden{display:none}.ending{border-top:3px solid var(--gold);padding-top:16px}.source{font-size:13px;color:#55534e}.footer{font-size:12px;color:var(--muted);text-align:center;margin-top:22px}
+@media(max-width:700px){.grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.panel{padding:17px}header{padding-top:26px}}
+</style>
+</head>
 <body>
-<header><div class="wrap"><div class="kicker">INTERACTIVE HISTORY • ROLE-PLAY</div><h1>形象的代價</h1><div class="sub">你做出一個選擇，別人卻可能替你寫下另一種故事。置身 17 世紀英格蘭內戰，選擇角色與行動，看看政治對手、支持者和出版者可能如何塑造你的形象。</div></div></header>
+<header><div class="wrap">
+<div class="eyebrow">A Historical Choice Game · 1642–1645</div>
+<h1>王冠之下<br>英格蘭內戰角色抉擇</h1>
+<p>扮演查理一世、荷麗葉特王后，或身處文宣戰場的政治行動者。在忠誠、榮譽、政治利益、軍事時機與公眾形象之間做出選擇，觀察同一行動如何產生不同的政治後果與歷史評價。</p>
+</div></header>
 <main class="wrap">
 <section class="panel" id="intro">
-<span class="tag">互動敘事，不是測驗</span><h2>先選擇你的角色</h2>
-<p>你不需要猜標準答案。每個選擇都有政治代價：同一個行動，可能被支持者解讀為忠誠，也可能被對手描繪成軟弱、傲慢或受人操縱。</p>
-<div class="roles">
-<button class="role" data-role="king"><b>查理一世</b><span>國王｜面對議會派對王權與決策能力的質疑</span></button>
-<button class="role" data-role="queen"><b>荷麗葉特王后</b><span>王后｜你的政治影響力可能被描述成忠誠建言，也可能成為攻擊國王的工具</span></button>
-<button class="role" data-role="pamphleteer"><b>議會派文宣編輯</b><span>出版者｜決定如何編排私人信件，讓讀者以某種角度理解國王</span></button>
-<button class="role" data-role="royalist"><b>保王派宣傳者</b><span>政治支持者｜反擊議會派，並重新建構君主與配偶的形象</span></button>
+<h2>遊戲說明</h2>
+<p>本遊戲以兩篇論文為基礎：賴芸儀〈統治形象與統治能力：以 17 世紀英格蘭內戰時期政治文宣戰為例〉，以及 William J. Bulman, “The Practice of Politics: The English Civil War and the ‘Resolution’ of Henrietta Maria and Charles I.”</p>
+<p>第一篇聚焦政治文宣如何塑造、攻擊或重建統治形象；第二篇提醒玩家，應將人物的決策放回當時的政治文化中理解。文中的 <em>resolution</em> 可理解為「在有限時間內，確定一段行動方案並付諸實行」，並不等同於永遠不改變立場。</p>
+<div class="grid">
+<div class="character"><span class="tag">角色 A</span><h3>查理一世</h3><p><strong>形象張力：</strong>堅毅守原則，或固執不知變通；願意暫時妥協，或被視為反覆無常。</p></div>
+<div class="character"><span class="tag">角色 B</span><h3>荷麗葉特王后</h3><p><strong>形象張力：</strong>被議會文宣描繪為操縱國王的外國天主教女性；也能被保王派塑造成維繫王權與宮廷文化的象徵。</p></div>
+<div class="character"><span class="tag">角色 C</span><h3>文宣策士</h3><p><strong>形象張力：</strong>掌握書信、印刷與公眾敘事；可以揭露政治祕密，也可能透過選擇性編排操縱讀者理解。</p></div>
 </div>
-<p id="roleHint" class="muted">選擇角色後開始。每條路線會出現不同的情境與形象結果。</p>
-<div class="actions"><button class="primary" id="begin" disabled>進入情境</button></div>
+<div class="actions"><button class="primary" onclick="startGame('charles')">扮演查理一世</button><button onclick="startGame('queen')">扮演荷麗葉特王后</button><button onclick="startGame('pamphlet')">扮演文宣策士</button></div>
+<p class="small">玩法：每一幕選擇一項行動。數值是遊戲模型，用來呈現取捨，不是論文提供的量化歷史數據。事件走向參照論文，但個別分支與結局屬於教學性推演。</p>
 </section>
-<section class="panel hidden" id="play" aria-live="polite">
-<div class="scene-meta"><span id="roleName">角色</span><span id="step">情境 1</span></div><div class="progress"><div class="bar" id="bar"></div></div>
-<span class="tag" id="theme">政治抉擇</span><h2 id="sceneTitle"></h2><p class="narrative" id="sceneText"></p><div class="choice-list" id="choices"></div>
-<div class="consequence hidden" id="consequence" role="status"></div>
-<div class="actions"><button class="primary" id="continue" disabled>繼續</button><button class="secondary" id="restart">重新選角</button></div>
+
+<section class="panel hidden" id="game">
+<div class="small" id="roleline"></div>
+<h2 id="sceneTitle"></h2>
+<p id="sceneText"></p>
+<blockquote id="sceneContext"></blockquote>
+<div id="stats" class="stats"></div>
+<div id="choices"></div>
+<div class="actions"><button id="restart" onclick="resetGame()">重新開始</button><button onclick="showSource()">查看史料依據</button></div>
 </section>
-<section class="panel hidden" id="ending">
-<span class="tag">形象檔案生成</span><h2 id="endingTitle">別人如何描述你？</h2><p id="endingIntro"></p>
-<div class="traits" id="traits"></div><h3>可能流傳的政治敘事</h3><blockquote id="narrativeResult"></blockquote>
-<h3>形象是怎麼形成的？</h3><p id="analysis"></p><p class="muted">注意：這是依照論文摘要所談的文宣機制設計的反事實互動情境，不代表這些情節確實發生，也不等於歷史人物的真實性格。</p>
-<div class="actions"><button class="primary" id="replay">換一組選擇</button><button class="secondary" id="newRole">選擇其他角色</button></div>
+<section class="panel hidden" id="result">
+<h2>你的政治結局</h2>
+<div id="endingText" class="ending"></div>
+<h3 style="margin-top:18px">角色形象檔案</h3>
+<p id="profile"></p>
+<h3>兩篇論文如何解讀你的選擇？</h3>
+<p id="analysis"></p>
+<div class="actions"><button class="primary" onclick="resetGame()">再玩一次／換個角色</button><button onclick="showSource()">查看史料依據</button></div>
 </section>
-<footer>依據：賴芸儀，〈統治形象與統治能力：以 17 世紀英格蘭內戰時期政治文宣戰為例〉，《人文及社會科學集刊》32 卷 3 期（2020），頁 489–521。此互動版依目前提供的論文摘要設計；角色選項及個別情境為教學性創作。</footer>
+<section class="panel hidden" id="sources">
+<h2>史料依據與設計界線</h2>
+<ul>
+<li><strong>賴芸儀：</strong>議會派將查理一世與王后的私人書信編整為 <em>The King’s Cabinet Opened</em>（1645），以王后介入政務的形象質疑國王統治能力；保王派後來以 <em>The Queens Closet Opened</em>（1655）重塑王后形象，並以 <em>The Court &amp; Kitchin of Elizabeth</em>（1664）諷刺克倫威爾夫人及其政權。</li>
+<li><strong>Bulman：</strong>反對只用「理性／非理性」「靈活／固執」等固定標準評斷查理與王后，主張分析他們如何在當時的榮譽、利益、忠誠與政治文化中形成短期行動決定。</li>
+<li><strong>史實與推演：</strong>納斯比戰役後議會軍取得王室書信，並於 1645 年出版書信集，是第一篇的核心事件。遊戲中部分對話、選項與數值為教學設計，不是歷史人物原話，也不表示某個選擇必然導致真實歷史改變。</li>
+</ul>
+<div class="actions"><button onclick="hideSource()">返回遊戲</button></div>
+</section>
+<div class="footer">歷史角色扮演教學原型 · 以論文論點為依據，避免把宣傳形象直接等同人物本身</div>
 </main>
 <script>
-const roles={
-king:{name:"查理一世",intro:"議會派正試圖說服公眾：國王的私人往來足以揭露他的統治能力。你如何回應，會影響別人能如何描述你。",scenes:[
-{theme:"公開回應",title:"私人信件被公開了",text:"議會派編整你的私人信件並準備出版。支持者要求你立刻回應；顧問提醒，任何回應都可能成為下一份文宣的材料。",choices:[
-["公開信件脈絡","你主動說明信件往來的背景，試圖重新掌握解釋權。","坦率、願意說明","對手可能挑選你的說明片段，聲稱你正在辯解或掩飾。",{openness:2,control:1,exposure:1}],
-["強調君主尊嚴","你拒絕回應，認為國王不必向政治對手交代私人通信。","堅定、重視王權","支持者可能視為維護尊嚴；對手則可能描繪成傲慢、不願接受質疑。",{authority:2,openness:-1,exposure:-1}],
-["把責任推給顧問","你表示信件只是日常政務往來，決策由顧問共同參與。","謹慎、依賴幕僚","對手可能將此說成逃避責任，進一步質疑你是否能獨立決策。",{dependence:2,control:-1,exposure:1}]]},
-{theme:"政治聯盟",title:"王后的影響力成為焦點",text:"議會派把你與荷麗葉特王后的通信連結起來。有人說她影響你太深，有人則認為夫妻共同商議政務很自然。",choices:[
-["公開肯定王后的建言","你表示信任配偶的判斷，並不否認她參與討論。","重視信任、願意共享意見","支持者可能看到穩固的政治聯盟；對手可能把你塑造成受王后支配。",{dependence:2,alliance:2,authority:-1}],
-["強調最後決策由自己承擔","你承認聽取王后意見，但強調國王對決策負最終責任。","有主見、強調責任","這可能維護自主形象，但對手仍可能把私人通信剪裁成相反證據。",{authority:2,control:1,alliance:1}],
-["要求王后退出公開政治","你希望減少她被攻擊的機會，要求她暫時遠離政治爭論。","保護盟友、控制風險","有人會視為保護家人；也有人會解讀成王后確實是你的政治弱點。",{control:2,alliance:-1,exposure:-1}]]},
-{theme:"留下記錄",title:"你要留下什麼證據？",text:"你可以安排公開聲明、保留完整往來紀錄，或把焦點轉向議會派的動機。你知道，未來的讀者可能只看到其中一部分。",choices:[
-["公開完整通信與背景","你希望讓讀者自行判斷，但無法控制所有人如何摘錄。","重視脈絡、承擔風險","完整材料有助於補充脈絡，也可能暴露更多可被攻擊的細節。",{openness:2,exposure:2,control:-1}],
-["製作簡潔的王權聲明","你選擇一套清楚、易於傳播的說法，集中強調責任與秩序。","擅長塑造訊息、重視秩序","清晰訊息有利於支持者傳播，但也可能被批評為刻意包裝。",{control:2,authority:1,openness:-1}],
-["反擊對手的編輯手法","你指出信件被挑選、編排，要求公眾追問出版者的目的。","警覺、善於反擊","讀者可能開始質疑文宣的選擇性，也可能認為你只是在轉移焦點。",{control:1,openness:1,exposure:1}]]}
+const roleNames={charles:"查理一世｜君主的決斷",queen:"荷麗葉特王后｜榮譽與王黨",pamphlet:"文宣策士｜書信與形象戰"};
+const initial={honour:5,unity:5,authority:5,public:5};
+let role='charles',scene=0,stats={},history=[];
+const scenes={
+charles:[
+{title:"第一幕｜王權與議會的僵局（1642）",text:"國王與議會在兵權、財政及政治權威上衝突。議會要求限制王權；王室陣營則認為自身權威與傳統秩序受到威脅。你必須決定如何回應。",context:"歷史脈絡：衝突逐步升高，雙方最終在 1642 年 8 月走向公開戰爭。",choices:[
+["堅持王權原則，拒絕交出任命權","維護王室權威與支持者的榮譽，但加深對立。",{honour:2,unity:1,authority:1,public:-2}],
+["先作有限讓步，換取談判空間","可能展現審慎，也可能讓支持者懷疑你的決心。",{honour:-1,unity:-1,authority:1,public:1}],
+["暫緩決定，繼續徵詢顧問","資訊或許增加，但政治時機可能迅速流失。",{honour:0,unity:-1,authority:-1,public:0}]
 ]},
-queen:{name:"荷麗葉特王后",intro:"你的通信被拿來作為攻擊查理一世的材料。你既可能被描繪成影響國王的力量，也可能被支持者描述為忠誠的政治盟友。",scenes:[
-{theme:"回應指控",title:"你被說成幕後操縱者",text:"一份文宣把你與國王的通信呈現為國王缺乏自主性的證據。你要如何回應這個被塑造的角色？",choices:[
-["強調夫妻共同商議","你公開表示，提供意見是政治夥伴關係的一部分。","忠誠、積極參與","支持者可能讚許你的忠誠；對手可能把建言描繪成越權干預。",{alliance:2,agency:2,exposure:1}],
-["淡化自己的政治角色","你強調自己只是關心國王的配偶，並不主導政務。","謙抑、保護王權","可能減少直接攻擊，也可能讓對手聲稱你正在隱藏真正影響力。",{agency:-1,control:1,exposure:-1}],
-["質疑信件被選擇性編排","你要求公眾檢視通信的完整脈絡，而不是只讀出版者挑選的片段。","警覺、重視證據","這可能把焦點轉向文宣的製作方式，但未必能阻止既有形象傳播。",{openness:2,control:1,exposure:1}]]},
-{theme:"支持王權",title:"如何表達對君主的支持？",text:"保王派希望你的形象能夠支持君主權威。你可以成為公開象徵、幕後協作者，或拒絕被簡化成宣傳符號。",choices:[
-["公開站在國王一方","你以明確姿態支持君主，讓支持者有共同的象徵。","堅定、忠誠","支持者可能把你塑造成君主權威的象徵；對手可能將你描繪成操縱政治的外來影響。",{alliance:2,exposure:2,agency:1}],
-["低調協助政治聯盟","你私下協調人際關係，避免自己成為宣傳焦點。","務實、謹慎","低調可能保護你，也可能讓流言以缺乏脈絡的方式填補空白。",{control:2,exposure:-1,alliance:1}],
-["拒絕成為任何一方的象徵","你表示自己不願被任何陣營拿來代表單一政治立場。","自主、不易被歸類","這能凸顯個人立場，但雙方仍可能依各自需要解釋你的沉默或拒絕。",{agency:2,alliance:-1,openness:1}]]},
-{theme:"留下形象",title:"你希望後人記得什麼？",text:"你無法決定所有出版者如何描述你，但可以決定現在留下什麼材料、採取什麼公開姿態。",choices:[
-["留下完整書信與說明","你提供更多背景，希望後人看見決策背後的關係與限制。","重視脈絡、願意承擔","材料更豐富，但私人通信也可能繼續被截取與重新解讀。",{openness:2,exposure:2,control:-1}],
-["以忠誠與王權為核心","你把公開訊息集中在對君主的支持與政治秩序。","立場鮮明、忠誠","訊息容易被支持者傳播，也可能使你的個人形象被壓縮成單一符號。",{alliance:2,control:2,agency:-1}],
-["直接反駁對手的標籤","你逐項回應對你的指控，試圖奪回解釋權。","積極、善於辯護","反駁可能澄清細節，也可能讓對手的標籤再次被傳播。",{control:1,openness:1,exposure:1}]]}
+{title:"第二幕｜是否犧牲部分支持者換取和解？",text:"部分顧問認為，可以處理個別支持者、赦免部分議員，以促成與議會的和解。王后則認為，拋棄曾冒險效忠的人，會傷害國王的榮譽與王黨的凝聚力。",context:"Bulman 指出，王后把榮譽視為組織王黨、維繫忠誠的重要方式；當時的「和解」也不只是抽象的理性選項，而牽涉支持者如何理解忠誠。",choices:[
+["接受和解方案，讓個別支持者受審","降低短期衝突的可能，但王黨忠誠網絡可能受損。",{honour:-2,unity:-2,authority:1,public:2}],
+["拒絕以支持者作交換，維持王室承諾","鞏固忠誠者的信任，也讓妥協更困難。",{honour:2,unity:2,authority:0,public:-1}],
+["設定期限：先維持方案，若條件改變再重新決定","以一段有限期間的行動決定爭取主動，而非永久承諾。",{honour:1,unity:1,authority:1,public:0}]
 ]},
-pamphleteer:{name:"議會派文宣編輯",intro:"你手上有國王與王后及朝臣的私人信件。你必須決定如何編排它們。你的選擇會影響讀者看見什麼，也會影響文宣如何被批評。",scenes:[
-{theme:"材料選擇",title:"哪一種故事最能打動讀者？",text:"信件內容複雜。你可以呈現完整脈絡、挑出最能顯示王后影響力的段落，或把焦點放在國王的決策責任。",choices:[
-["突出王后對國王的建議","你選取能呈現王后影響力的通信，讓讀者追問誰在實際引導決策。","善於聚焦、攻擊性強","讀者可能因此認為國王受王后支配；但選擇性編排也可能引發偏頗的質疑。",{framing:2,bias:2,clarity:2}],
-["完整刊載並補上背景","你希望讀者看到較多上下文，降低單一解讀的可能。","重視脈絡、相對審慎","可信度可能提高，但核心指控也可能因此不夠鮮明。",{context:2,bias:-1,clarity:-1}],
-["聚焦國王的決策責任","你把信件放進更大的統治能力爭論，而非只攻擊王后。","直接、聚焦制度責任","政治論點更明確，但讀者仍可能把複雜的統治問題簡化成個人性格。",{framing:1,clarity:2,context:1}]]},
-{theme:"出版策略",title:"標題與編排會怎麼說話？",text:"即使沒有改動信件原文，標題、順序與前言也會提示讀者應該怎麼理解它們。",choices:[
-["使用強烈、揭露式標題","你把出版物包裝成揭開國王私下真相的行動。","強勢、擅長吸引注意","讀者容易感到自己看見了秘密；對手可能指控你利用煽動性包裝取代脈絡。",{framing:2,bias:2,clarity:2}],
-["標明材料限制與來源","你解釋信件如何取得、經過哪些整理，並提醒讀者注意限制。","透明、重視可信度","有助於建立可信度，但可能削弱文宣的即時攻擊力。",{context:2,bias:-2,clarity:-1}],
-["用信件順序建立因果感","你把信件依某種次序排列，讓讀者逐步形成對決策關係的印象。","善於敘事、重視效果","敘事容易理解，但讀者可能把編排出的順序誤認為完整的因果證明。",{framing:2,context:-1,clarity:1}]]},
-{theme:"回應反擊",title:"對手指控你操弄材料",text:"保王派質疑你的出版物把私人通信轉成政治攻擊。你要如何維持這份文宣的說服力？",choices:[
-["公開說明編輯原則","你解釋選材與編排的理由，承認材料不能回答所有問題。","願意交代、較審慎","可能增加透明度，也會讓讀者看見你如何引導解讀。",{context:2,bias:-1,clarity:1}],
-["反覆強調信件揭露的弱點","你將焦點放在國王是否具備自主決策能力。","攻勢明確、立場鮮明","核心訊息容易傳播，但複雜的政治能力問題可能被縮減成個人形象攻擊。",{framing:2,bias:1,clarity:2}],
-["把判斷交給讀者","你不再追加評論，讓信件本身成為主要材料。","克制、保持距離","看似中立，但選擇哪些信件、如何排列，本身已經影響讀者的理解。",{context:1,bias:1,clarity:-1}]]}
+{title:"第三幕｜時機正在消失：是否立即行動？",text:"你收到消息，某地的民意與地方支持可能暫時有利於王室。王后催促你把握時機；顧問則提醒，倉促行動可能帶來風險。",context:"Bulman 以王后對赫爾（Hull）問題的催促說明：對王后與查理而言，迅速執行一項短期決定，可能比不斷收集新資訊更重要；但這不代表每次迅速行動都會成功。",choices:[
+["立即按原定計畫行動","抓住短暫窗口，但若局勢判斷錯誤，代價也會放大。",{honour:1,unity:1,authority:2,public:-1}],
+["重新評估情報，再決定","減少倉促風險，但可能錯失民意與行動窗口。",{honour:0,unity:-1,authority:-1,public:1}],
+["只執行可逆、有限期的步驟，之後再議","兼顧速度與重新判斷的空間，符合短期 resolution 的思路。",{honour:1,unity:0,authority:1,public:1}]
 ]},
-royalist:{name:"保王派宣傳者",intro:"議會派以《The King’s Cabinet Opened》攻擊國王的統治能力。你需要回應這套說法，也要思考如何避免自己採用的反擊手段產生新的爭議。",scenes:[
-{theme:"回應文宣",title:"如何反擊國王受王后操縱的說法？",text:"對手把王后的影響力描繪成國王軟弱的證據。你可以重塑王后形象、質疑對手的編排，或轉向君主責任。",choices:[
-["把王后描繪成忠誠的政治盟友","你強調王后支持君主，夫妻共同面對政治危機。","忠誠、重視聯盟","支持者可能看見穩固的君主家庭；對手可能仍把她的影響力說成干預。",{alliance:2,framing:1,clarity:1}],
-["質疑對手選擇性編排","你追問信件是否脫離脈絡，要求讀者注意出版者的目的。","警覺、重視證據","這能讓文宣製作方式成為爭論焦點，但不會自動消除對國王的質疑。",{context:2,bias:1,clarity:-1}],
-["把焦點轉回國王的責任","你強調君主必須為自己的決策負責，不把所有爭議歸咎於王后。","強調責任、務實","這可能維護國王自主形象，也可能承認國王必須直接面對決策後果。",{authority:2,alliance:1,clarity:1}]]},
-{theme:"反向宣傳",title:"你要如何描述政治對手？",text:"你可以只回應材料本身，也可以仿效對手，透過統治者配偶的行為形象攻擊其統治能力。",choices:[
-["攻擊護國公夫人的行為形象","你把她的行為描述成不符合高雅規範，藉此嘲諷克倫威爾的統治能力。","善於反擊、運用社會規範","這呼應論文摘要所述的保王派策略，但也把政治爭論轉成對配偶形象的攻擊。",{framing:2,bias:2,clarity:1}],
-["集中批評克倫威爾的政治決策","你把焦點放在其統治行為與政治責任。","直接、聚焦治理","論點較接近公共政治責任，但可能較難透過私人形象形成戲劇性故事。",{authority:2,context:1,clarity:1}],
-["揭露雙方都在塑造形象","你主張讀者應同時檢視議會派與保王派的選材、標題和暗示。","反思性、重視方法","可能提升讀者對宣傳的警覺，但也可能削弱己方訊息的簡潔性。",{context:2,bias:-1,clarity:-1}]]},
-{theme:"傳播策略",title:"你的訊息要留下什麼印象？",text:"你的支持者需要簡潔口號，批判者則會檢查你如何使用證據。你必須決定政治效果與脈絡之間的取捨。",choices:[
-["用鮮明人物形象傳播","你用忠誠、軟弱、傲慢等容易記住的形象組織敘事。","擅長動員、強調情緒","容易傳播，也可能把人物複雜性壓縮成標籤。",{framing:2,clarity:2,bias:1}],
-["附上材料與脈絡","你讓支持者理解證據的限制與事件背景。","重視證據、審慎","有利於深入理解，但傳播速度可能較慢。",{context:2,bias:-2,clarity:-1}],
-["模仿對手的攻擊方式","你使用配偶形象與行為規範反擊對手。","戰術靈活、攻防強烈","短期可能有效，但也讓雙方都陷入以私人形象評判政治能力的攻防。",{framing:2,bias:2,clarity:1}]]}
+{title:"第四幕｜私人書信落入敵手（1645）",text:"納斯比戰役後，議會軍從王室行李中取得國王與王后往來書信。議會準備將信件編整出版。你無法控制信件內容被如何呈現，只能思考政治形象將如何被解讀。",context:"《The King’s Cabinet Opened》把王后描繪成實際主導國王決策的人，藉此把家庭關係轉化為對國王統治能力的攻擊。",choices:[
+["公開辯護：強調信件是戰時政治往來，不能單獨定義統治能力","嘗試恢復脈絡，但未必能抵銷「揭密」帶來的衝擊。",{honour:1,unity:1,authority:1,public:0}],
+["把焦點放在王后對王室的忠誠與付出","有助王黨支持者理解其行動，卻可能強化她介入政務的可見度。",{honour:1,unity:1,authority:-1,public:-1}],
+["拒絕回應，避免進一步擴大話題","避免提供新材料，但讓對手更容易主導敘事。",{honour:0,unity:-1,authority:-2,public:-1}]
 ]}
+],
+queen:[
+{title:"第一幕｜身在海牙：如何支援王室？（1642）",text:"你身在海外，正為丈夫籌措軍需與尋找支援。英格蘭政局迅速惡化，你的法國出身與天主教信仰容易被政治對手拿來攻擊。",context:"兩篇論文都指出，王后確實參與王室政治；分歧在於，應把她理解成破壞國王判斷的操縱者，還是置身特定政治文化中的政治行動者。",choices:[
+["動用人脈籌款與外交支援，並向查理說明理由","提升王室資源，但也留下可被對手解讀為外國干預的材料。",{honour:1,unity:1,authority:1,public:-1}],
+["把支援集中在私人財物與低調協調","降低公開曝光，卻可能限制支援規模與速度。",{honour:0,unity:1,authority:0,public:1}],
+["優先打造公開形象，強調自己對王室的忠誠","可建立支持者認同，也容易讓政治行動被簡化為形象表演。",{honour:1,unity:0,authority:0,public:1}]
+]},
+{title:"第二幕｜王黨該不該接受和解？",text:"查理考慮與議會達成妥協，可能讓部分王室支持者被交付審判。你認為，這會損害國王對忠誠者的承諾。你要如何勸說他？",context:"Bulman 所分析的王后書信，將 honour（榮譽）與王黨的組織、效忠及王權延續緊密連結。這是當事人的政治理解，不是唯一可能的政策判斷。",choices:[
+["強調拋棄忠誠者會損害國王榮譽","可強化王黨凝聚力，但壓縮和解空間。",{honour:2,unity:2,authority:0,public:-1}],
+["容許有限妥協，要求國王保留核心承諾","可能保存部分支持者與談判空間，但雙方都可能不滿。",{honour:0,unity:1,authority:1,public:1}],
+["把支持者分成可合作與不可合作的群體，逐步處理","更有策略彈性，但容易被解讀為內部分化或算計。",{honour:-1,unity:-1,authority:1,public:0}]
+]},
+{title:"第三幕｜速度與判斷",text:"你認為政治局勢變化太快，若國王不及時執行計畫，民意窗口便會消失。你要如何處理不確定性？",context:"在 Bulman 的分析中，resolution 是有限期間內確定並執行一套行動，完成後再重新商議；它既不等於盲目固執，也不等於隨時改變計畫。",choices:[
+["要求查理立刻執行已定計畫","展現果斷與行動力，但若條件已變，計畫可能失效。",{honour:1,unity:1,authority:2,public:-1}],
+["訂出短期行動期限，期限到再重新評估","保留行動速度與調整空間，讓決策更符合當時的時間感。",{honour:1,unity:1,authority:1,public:1}],
+["等待更多情報，避免過早承諾","可降低部分風險，但可能錯失機會並削弱你對查理的影響力。",{honour:0,unity:-1,authority:-1,public:1}]
+]},
+{title:"第四幕｜你的形象被公開重寫",text:"議會派出版《The King’s Cabinet Opened》，把私人信件編排成王后操縱國王的證據。多年後，保王派也可能把你的形象轉化為王權象徵。你如何回應？",context:"賴芸儀指出，形象會隨出版情境而被重新編碼：同一位王后既能被描繪成干預國政的威脅，也能被塑造成博學、忠貞、維繫王室文化的象徵。",choices:[
+["以忠誠、博學與宮廷文化重建王后形象","可能為保王派提供正面象徵，但也會把政治爭論轉移到形象競逐。",{honour:2,unity:1,authority:1,public:2}],
+["反駁書信的選擇性編排，要求回到歷史脈絡","強調文宣並非透明事實，但難以完全控制公眾閱讀。",{honour:1,unity:0,authority:1,public:0}],
+["讓支持者以相同的揭密手法反擊對手","可能有效製造反差，也會加深政治論戰與互相醜化。",{honour:-1,unity:1,authority:0,public:-1}]
+]}
+],
+pamphlet:[
+{title:"第一幕｜取得王室私人書信",text:"你站在議會派一方。納斯比戰役後，王室信件被發現，其中包含查理一世與荷麗葉特王后的往來內容。這些材料既有情報價值，也可能改變公眾對王權的理解。",context:"賴芸儀指出，書信之所以具有說服力，部分原因在於它們是國王親筆書寫；但編輯、翻譯、選材與出版本身也在塑造讀者的解讀。",choices:[
+["編整信件並出版，突出王后對國政與軍事的影響","最直接打擊國王統治能力，但也把性別、外國出身與宗教偏見帶入敘事。",{honour:-1,unity:1,authority:2,public:2}],
+["先公布可核對的軍事情資，避免過度推論人物性格","兼顧證據與可信度，但對國王形象的即時衝擊較小。",{honour:1,unity:0,authority:1,public:0}],
+["把信件交由多方檢視，再決定出版方式","提升程序可信度，但可能延誤宣傳時機。",{honour:1,unity:-1,authority:0,public:1}]
+]},
+{title:"第二幕｜如何描述王后？",text:"編輯團隊要決定如何向讀者介紹荷麗葉特。你知道她是法國出身、信奉天主教，也參與王室政治。你會如何安排敘事？",context:"論文指出，議會派利用王后形象來質疑國王統治能力；分析這種文宣時，應同時看見它的政治目的與其使用的性別、宗教、外國人刻板印象。",choices:[
+["描繪她為幕後操縱者，讓國王顯得軟弱","政治攻擊力強，但把複雜決策簡化成家庭中的權力顛倒。",{honour:-2,unity:1,authority:2,public:2}],
+["描述她的實際政治參與，清楚區分證據與推論","較能保留歷史複雜性，但文宣感染力可能較弱。",{honour:2,unity:0,authority:1,public:0}],
+["以外國與天主教威脅為主軸","可能快速動員既有偏見，卻讓宗教與排外情緒取代具體證據。",{honour:-2,unity:0,authority:1,public:1}]
+]},
+{title:"第三幕｜保王派反擊",text:"共和國建立後，保王派以《The Queens Closet Opened》呈現王后的家事知識、醫學配方與宮廷文化，重建斯圖亞特王朝形象。你如何回應這場形象反攻？",context:"賴芸儀指出，食譜與藥典也可能具有政治意涵：王后被描繪成知識、精緻文化與宮廷秩序的傳承者，與克倫威爾政權形成對比。",choices:[
+["嘲諷王后只適合家務，削弱其公共象徵","可能反而重複保王派的性別框架，讓對方掌握道德高地。",{honour:-1,unity:0,authority:-1,public:-1}],
+["分析該書如何把家務知識轉化為王權正當性","把注意力放回文宣機制，有助理解其政治用途。",{honour:2,unity:0,authority:1,public:1}],
+["仿效對方，以克倫威爾夫人作為反擊對象","沿用對手的形象戰策略，短期有反擊效果，卻延續以配偶評判統治者的模式。",{honour:-1,unity:1,authority:0,public:0}]
+]},
+{title:"第四幕｜你要留下什麼樣的政治記憶？",text:"你的文宣已經流通。讀者可能把出版內容當成透明真相，也可能把它視為黨派攻防。你要如何處理自己的政治責任？",context:"兩篇論文共同提醒：私人信件、政治行動與後世形象之間並非簡單的一對一關係。行動者的意圖、當時的政治文化與出版後的再利用，都會影響歷史記憶。",choices:[
+["繼續以強烈情緒與鮮明人物形象動員讀者","容易形成清晰的敵我敘事，但會犧牲複雜性。",{honour:-2,unity:1,authority:1,public:2}],
+["附上背景、選材原則與不確定之處","提升可檢驗性，但未必能阻止後人把材料重新挪用。",{honour:2,unity:0,authority:1,public:0}],
+["把所有結果歸因於對手的宣傳","短期保護自身陣營，卻無法回應證據與編輯責任。",{honour:-1,unity:0,authority:-1,public:-1}]
+]}
+]
 };
-let selected=null,sceneIndex=0,stats={},history=[];
-const keys={authority:"王權自主",dependence:"受人影響",alliance:"政治忠誠",agency:"個人能動性",openness:"公開透明",control:"形象掌控",exposure:"爭議曝光",framing:"敘事操控",bias:"選擇性編排",context:"脈絡完整",clarity:"訊息鮮明"};
-const $=id=>document.getElementById(id);
-document.querySelectorAll("[data-role]").forEach(b=>b.addEventListener("click",()=>{selected=b.dataset.role;document.querySelectorAll("[data-role]").forEach(x=>x.style.outline=x===b?"3px solid #b08a4a":"");$("roleHint").textContent="已選擇："+roles[selected].name+"。你的選擇會累積成一份可能被塑造的形象檔案。";$("begin").disabled=false}));
-function begin(){sceneIndex=0;stats={};history=[];$("intro").classList.add("hidden");$("ending").classList.add("hidden");$("play").classList.remove("hidden");render()}
-function render(){const r=roles[selected],s=r.scenes[sceneIndex];$("roleName").textContent=r.name;$("step").textContent=`情境 ${sceneIndex+1}／${r.scenes.length}`;$("bar").style.width=`${sceneIndex/r.scenes.length*100}%`;$("theme").textContent=s.theme;$("sceneTitle").textContent=s.title;$("sceneText").textContent=sceneIndex===0?r.intro+" "+s.text:s.text;$("choices").innerHTML="";$("consequence").classList.add("hidden");$("continue").disabled=true;$("continue").textContent=sceneIndex===r.scenes.length-1?"生成形象檔案":"前往下一個情境";s.choices.forEach((c,i)=>{const b=document.createElement("button");b.className="choice";b.innerHTML=`<b>${String.fromCharCode(65+i)}．${c[0]}</b><span>${c[1]}</span>`;b.onclick=()=>choose(i);$("choices").appendChild(b)})}
-function choose(i){const s=roles[selected].scenes[sceneIndex],c=s.choices[i];[...$("choices").children].forEach(b=>b.disabled=true);Object.entries(c[4]).forEach(([k,v])=>stats[k]=(stats[k]||0)+v);history.push({scene:s.title,choice:c[0],label:c[2],result:c[3]});$("consequence").classList.remove("hidden");$("consequence").innerHTML=`<strong>這個選擇可能造成的解讀</strong>${c[2]}。${c[3]} ${consequenceText(c[4])}`;$("continue").disabled=false}
-function consequenceText(e){const out=[];if(e.authority>=2)out.push("你強化了自主承擔責任的形象");if(e.dependence>=2)out.push("對手更容易把你描繪成受他人影響");if(e.alliance>=2)out.push("支持者更容易把你塑造成忠誠盟友");if(e.framing>=2)out.push("你選擇用鮮明敘事引導公眾理解");if(e.bias>=2)out.push("選擇性呈現可能成為對手反擊的焦點");if(e.context>=2)out.push("你提供脈絡，但可能降低訊息的簡潔性");if(e.exposure>=2)out.push("更多細節曝光，也帶來更多被重新解讀的可能");if(e.control>=2)out.push("你試圖主動控制公眾看到的形象");if(!out.length)out.push("這個選擇的政治效果取決於誰在傳播、如何編排，以及讀者相信什麼");return out.join("；")+"。"}
-function finish(){const r=roles[selected];$("play").classList.add("hidden");$("ending").classList.remove("hidden");$("bar").style.width="100%";$("endingTitle").textContent=`${r.name}：形象並非完全由你決定`;const pos=Object.entries(stats).sort((a,b)=>b[1]-a[1]);const top=pos.slice(0,3);$("endingIntro").textContent=`你在三個情境中做出了 ${history.length} 次選擇。這些選擇形成了特定的行動軌跡；不同陣營仍可能用不同方式解釋同一行動。以下是根據你的路線生成的可能形象，而非對歷史人物真實性格的判定。`;$("traits").innerHTML="";top.forEach(([k,v])=>{const el=document.createElement("div");el.className="trait";el.innerHTML=`<span class="muted">形象傾向</span><b>${keys[k]||k}</b><div class="meter"><div style="width:${Math.min(100,Math.max(15,50+v*12))}%"></div></div>`;$("traits").appendChild(el)});
-const h=history.map((x,i)=>`${i+1}.「${x.choice}」`).join("；");let n="",a="";
-if(selected==="king"){const dep=stats.dependence||0,auth=stats.authority||0,open=stats.openness||0;n=dep>auth?`批評者可能寫道：「國王的決策受到身邊人物左右，難以展現獨立的統治判斷。」支持者則可能說，他是在信任政治盟友。`:auth>dep?`支持者可能寫道：「國王願意承擔決策責任，並維護君主職分。」批評者仍可能從私人通信中挑出片段，質疑這種自主形象。`:`不同陣營可能各取所需：一方把你的行動解讀為謹慎與責任，另一方則將其描繪成迴避或缺乏決斷。`;a="論文摘要指出，《The King’s Cabinet Opened》透過王后形象質疑查理一世的統治能力。你的路線模擬了行動如何被納入這類論述；真正影響形象的，還包括出版者選取哪些材料、如何排列，以及省略哪些背景。"}
-else if(selected==="queen"){const al=stats.alliance||0,ag=stats.agency||0;n=al>ag?`支持者可能將你描繪成忠誠、與君主共同承擔危機的政治盟友；批評者則可能把相同的參與描述為越權影響國王。`:ag>al?`你可能被塑造成有自主判斷的政治行動者；對手仍可能把你的自主性描述為對君主權威的威脅。`:`你的形象可能在「忠誠的伴侶」與「影響國王的政治力量」之間擺盪，取決於誰在說故事。`;a="摘要顯示，王后形象能被不同陣營用於不同政治目的。角色行動本身不會自動產生單一形象；支持者與對手會依各自的政治立場，替同一行為賦予不同意義。"}
-else if(selected==="pamphleteer"){const fr=stats.framing||0,ct=stats.context||0,bias=stats.bias||0;n=fr+bias>ct?`讀者可能認為你善於揭露國王的弱點；批評者則可能指出，你的標題、選材與排序已經引導了結論。`:ct>fr?`你可能被視為較重視史料脈絡的編輯；但政治支持者可能批評你的呈現不夠有力，難以形成鮮明主張。`:`你可能同時被看成政治溝通者與材料的編排者。讀者不只會閱讀信件，也會受到你安排閱讀順序的影響。`;a="論文摘要將《The King’s Cabinet Opened》視為政治文宣，並指出它把王后形象連結到國王的統治能力。這條路線凸顯：即使不直接捏造材料，選材、標題和編排仍可能塑造讀者的理解。"}
-else{const fr=stats.framing||0,ct=stats.context||0,bias=stats.bias||0;n=fr+bias>ct?`支持者可能認為你成功反擊議會派；批評者則可能指出，你也使用了以配偶形象攻擊統治能力的策略。`:ct>fr?`你可能被視為要求讀者檢視證據與脈絡的宣傳者，但鮮明的反擊口號可能因此減弱。`:`你可能被視為務實的反擊者，也可能被批評為把政治責任轉化成人物形象的攻防。`;a="摘要指出，保王派不只藉王后形象宣傳君主權威，也曾透過護國公夫人的行為形象嘲諷克倫威爾的統治能力。這顯示形象政治可以被反向運用，並不只屬於單一陣營。"}
-$("narrativeResult").textContent=n;$("analysis").textContent=a;$("endingIntro").textContent+=` 你的行動紀錄：${h}。`}
-function advance(){if($("continue").disabled)return;if(sceneIndex<roles[selected].scenes.length-1){sceneIndex++;render()}else finish()}
-$("begin").onclick=begin;$("continue").onclick=advance;$("restart").onclick=()=>{$("play").classList.add("hidden");$("intro").classList.remove("hidden")};$("replay").onclick=begin;$("newRole").onclick=()=>{$("ending").classList.add("hidden");$("intro").classList.remove("hidden");selected=null;$("begin").disabled=true;document.querySelectorAll("[data-role]").forEach(x=>x.style.outline="");$("roleHint").textContent="選擇角色後開始。每條路線會出現不同的情境與形象結果。"};
-</script></body></html>
+function startGame(r){role=r;scene=0;stats={...initial};history=[];document.getElementById('intro').classList.add('hidden');document.getElementById('result').classList.add('hidden');document.getElementById('sources').classList.add('hidden');document.getElementById('game').classList.remove('hidden');renderScene();window.scrollTo({top:0,behavior:'smooth'});}
+function renderScene(){let s=scenes[role][scene];document.getElementById('roleline').textContent=roleNames[role]+'　｜　第 '+(scene+1)+' / '+scenes[role].length+' 幕';document.getElementById('sceneTitle').textContent=s.title;document.getElementById('sceneText').textContent=s.text;document.getElementById('sceneContext').textContent=s.context;
+let statsEl=document.getElementById('stats');statsEl.innerHTML='';[['honour','榮譽／原則'],['unity','陣營凝聚'],['authority','政治影響力'],['public','公眾形象']].forEach(([k,l])=>{let v=Math.max(0,Math.min(10,stats[k]));statsEl.innerHTML+=`<div class="stat"><label>${l}</label><strong>${v}/10</strong><div class="meter"><span style="width:${v*10}%"></span></div></div>`});
+let c=document.getElementById('choices');c.innerHTML='';s.choices.forEach((x,i)=>{let b=document.createElement('button');b.className='choice';b.innerHTML=`<b>${String.fromCharCode(65+i)}｜${x[0]}</b><span>${x[1]}</span>`;b.onclick=()=>choose(i);c.appendChild(b);});}
+function choose(i){let s=scenes[role][scene],ch=s.choices[i];Object.keys(ch[2]).forEach(k=>stats[k]=Math.max(0,Math.min(10,stats[k]+ch[2][k])));history.push({scene:s.title,choice:ch[0],desc:ch[1]});scene++;if(scene<scenes[role].length)renderScene();else finish();window.scrollTo({top:0,behavior:'smooth'});}
+function finish(){document.getElementById('game').classList.add('hidden');document.getElementById('result').classList.remove('hidden');let vals=Object.values(stats),score=vals.reduce((a,b)=>a+b,0);let end;
+if(stats.public>=8&&stats.authority>=7)end="你成功建立了強烈、容易傳播的政治形象。你的敘事在短期內取得優勢，但後世仍須追問：這個形象是由哪些材料、選擇與偏見建構出來的？";
+else if(stats.honour>=8&&stats.unity>=7)end="你建立了以榮譽、忠誠與承諾為核心的政治網絡。支持者可能因此更願意承擔風險；代價是，當局勢變化時，重新談判或接受妥協會更困難。";
+else if(stats.authority<=3||stats.public<=3)end="你的政治影響力受到限制，或讓對手主導了公共敘事。這不必然代表你的原則毫無價值；但在內戰環境中，行動時機與形象傳播也會改變政策的實際效果。";
+else end="你留下了一個充滿張力的政治位置：部分選擇維護了原則或陣營，另一些選擇則保留調整空間。你的角色不能只用「固執」或「靈活」概括，必須回到當時的目標、榮譽觀與政治處境理解。";
+document.getElementById('endingText').innerHTML=`<p>${end}</p><p><strong>最終指標：</strong>榮譽／原則 ${stats.honour}、陣營凝聚 ${stats.unity}、政治影響力 ${stats.authority}、公眾形象 ${stats.public}。</p><h3>你的行動紀錄</h3><ol>${history.map(h=>`<li><strong>${h.scene}</strong><br>${h.choice}<br><span class="small">${h.desc}</span></li>`).join('')}</ol>`;
+let top=Object.entries(stats).sort((a,b)=>b[1]-a[1])[0][0];let labels={honour:'榮譽／原則',unity:'陣營凝聚',authority:'政治影響力',public:'公眾形象'};
+document.getElementById('profile').textContent='本輪最突出的面向是「'+labels[top]+'」。這是根據遊戲中各項選擇累積而成的角色檔案，不是對真實歷史人物的心理診斷。';
+document.getElementById('analysis').textContent=role==='pamphlet'?'賴芸儀的研究最能解釋你如何透過選材、標題與配偶形象建構統治能力的論述；Bulman 則提醒，文宣中的形象不應直接當作人物實際決策方式的全貌。':role==='queen'?'Bulman 的論文有助理解你如何把榮譽、忠誠與短期行動決定連結起來；賴芸儀的論文則呈現這些政治介入如何被議會派重新編排，成為攻擊王權的文宣材料。':'Bulman 提醒我們，決策中的堅持與調整必須放回當時的政治文化理解；賴芸儀則展示，私人書信一旦經過選材與出版，便可能被轉化成攻擊統治能力的公共證據。你的行動結果與公眾對你的形象，未必一致。';}
+function resetGame(){document.getElementById('result').classList.add('hidden');document.getElementById('game').classList.add('hidden');document.getElementById('intro').classList.remove('hidden');document.getElementById('sources').classList.add('hidden');window.scrollTo({top:0,behavior:'smooth'});}
+function showSource(){document.getElementById('sources').classList.remove('hidden');document.getElementById('sources').scrollIntoView({behavior:'smooth'});}
+function hideSource(){document.getElementById('sources').classList.add('hidden');}
+</script>
+</body>
+</html>
